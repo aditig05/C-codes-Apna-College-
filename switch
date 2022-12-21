@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char button;
+	cout<<"type a character";
+	cin>>button;
+	switch(button)
+	{
+	    case'a':
+	    cout<<"\nhi"<<endl;
+	    break;
+	     case'b':
+	    cout<<"how r u"<<endl;
+	    break;
+	     case'c':
+	    cout<<"what is going"<<endl;
+	    break;
+	     case'd':
+	    cout<<"i don't know"<<endl;
+	    break;
+	}
+	
+	return 0;
+}
