@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+//Floyd's triangle
+int main() {
+    int n,a=0;
+    cin>>n; 
+        for(int i=1 ; i<=n; i++){
+             for(int j=1 ; j<=i; j++){
+                    a++;
+                    cout<<a; // took a counter a and each time the loop executes, we increase the value of a by 1 and then print it
+            }
+            cout<<endl; //to break the line and go to the next line
+    }   
+	return 0;
+}
