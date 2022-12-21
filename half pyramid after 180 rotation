@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+//half pyramid after 180 rotation
+int main() {
+    int n;
+    cin>>n;
+        for(int i=1 ; i<=n; i++){
+             for(int j=1 ; j<=n; j++){
+                if(j<=n-i){  // adding spaces for n-i times
+                    cout<<" ";
+                }
+                else{ // adding * for the rest 
+                    cout<<"*";
+                }
+            }
+            cout<<endl; //to break the line and go to the next line
+    }   
+	return 0;
+}
