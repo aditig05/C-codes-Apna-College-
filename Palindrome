@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+//Palindrome      1
+        //      2 1 2
+    //        3 2 1 2 3 
+    //      4 3 2 1 2 3 4 
+//        5 4 3 2 1 2 3 4 5 
+int main() {
+    int n;
+    cin>>n; 
+        for(int i=1 ; i<=n; i++){ //Rows=1 to n
+            for(int j=1 ; j<=n-i; j++){  //columns into 2 1st is for printing spaces from 1 to n-i 
+//2nd is for printing no from row no to 1 
+//3rs is for again printing no. from 1 to row no.
+                    cout<<" ";
+                    }
+            for(int j=i; j>1; j--){  
+               cout<<j ;
+            }
+             for(int j=1; j<=i; j++){  
+               cout<<j ;
+            }
+            cout<<endl; 
+    }   
+	return 0;
+}
