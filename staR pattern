@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+//staR pattern    *
+        //      * * *
+    //        * * * * *
+    //      * * * * * * *
+//        * * * * * * *
+  //          * * * * *
+  //            * * * 
+  //              *
+
+int main() {
+    int n;
+    cin>>n; 
+        for(int i=1 ; i<=n; i++){   // Rows = 1 to n
+            for(int j=1 ; j<=n-i; j++){  // columns = for spaces= 1 to n-row no.
+                    cout<<" ";
+                    }
+            for(int j=1; j<=2*i-1 ;j++){  //columns= for stars 1 to 2*row no.-1
+               cout<<"*";
+            }
+            cout<<endl; 
+    }   
+   
+    for(int i=n; i>=1; i--){  // Rows = 1 to n
+            for(int j=1 ; j<=n-i; j++){  // columns = for spaces= 1 to n-row no.
+                    cout<<" ";
+                    }
+            for(int j=1; j<=2*i-1 ;j++){
+               cout<<"*";
+            }
+            cout<<endl; 
+    }   
+   
+	return 0;
+}
