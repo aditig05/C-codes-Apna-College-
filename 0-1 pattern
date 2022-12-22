@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+//0-1 pattern
+int main() {
+    int n;
+    cin>>n; 
+        for(int i=1 ; i<=n; i++){ //Rows=1 to n
+            for(int j=1 ; j<=i; j++){  //Columns=1 to row no.(i)
+                if((i+j)%2==0){  //Elements=print 1 when row no+ col no is even, else 0.                cout<<1;
+            }   
+                else{
+                    cout<<0;
+                    }
+            }
+            cout<<endl; 
+    }   
+	return 0;
+}
