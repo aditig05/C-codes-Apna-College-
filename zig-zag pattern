@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+//zig-zag pattern  
+//      *       *
+//    *   *   *   * 
+//  *       *       *
+
+int main() {
+    int n;
+    cin>>n; 
+        for(int i=1 ; i<=3; i++){   // Rows = 1 to n
+            for(int j=1 ; j<=n; j++){// columns = stars are at places where i+j is divisible by 4
+                if(((i+j)%4==0) || (i=2 && j%4==0)){ // and at places where i=2 and col%4=0
+                    cout<<"*";
+                    }
+                else{
+                    cout<<" ";
+                    }
+            
+            }
+            cout<<endl; 
+   
+    }   
+   
+	return 0;
+}
