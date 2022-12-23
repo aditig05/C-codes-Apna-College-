@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+//armstrong number
+int main() {
+    int n;
+    int sum=0;
+    cin>>n;
+    int originaln=n;
+    while(n>0){
+    int lastdigit=n%10; // lastdigit in each iteration can be found with this
+    sum=sum+pow(lastdigit,3); // and each time we add that last digit cube to the number itself.
+    n=n/10; // to remove the last digit we divide by 10 each time
+    }
+    if(sum==originaln){
+    cout<<"armstong number";
+    }
+    else{
+        cout<<"not armstong";
+    }
+	return 0;
+}
