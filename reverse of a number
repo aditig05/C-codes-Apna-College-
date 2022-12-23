@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+// reverse of a number
+int main() {
+    int n, reverse=0;
+    cin>>n;
+    while(n>0){
+    int lastdigit=n%10; // lastdigit in each iteration can be found with this
+    reverse=reverse*10+lastdigit; // and each time we add that last digit to the number itself.
+    n=n/10; // to remove the last digit we divide by 10 each time
+    }
+    cout<<reverse;
+	return 0;
+}
