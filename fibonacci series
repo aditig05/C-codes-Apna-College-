@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+// fibonacci series 
+
+void fib(int n){
+    int t1=0;
+    int t2=1;
+    int nextTerm;
+        for(int i=1; i<=n; i++){
+            cout<<t1<<endl;
+            nextTerm=t1+t2;
+            t1=t2; 
+            t2=nextTerm;  // changimg the t1 and t2 terms as follows
+        }
+    return;
+}
+            
+int main() {
+    
+    int n;
+    cin>>n;
+    
+    fib(n);
+    
+	return 0;
+}
